@@ -1,6 +1,8 @@
-package basic.ioTest.io;
+package basic.ioTest.ioOne;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 /**
  * @description: TODO
@@ -13,7 +15,7 @@ public class B {
 
     BufferedReader reader = new BufferedReader(re);
     String s;
-    while(null != (s = reader.readLine())){
+    while (null != (s = reader.readLine())) {
       System.out.println(s);
     }
   }

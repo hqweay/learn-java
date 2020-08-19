@@ -1,4 +1,4 @@
-package basic.ioTest.io;
+package basic.ioTest.ioOne;
 
 import java.io.*;
 
@@ -30,7 +30,7 @@ public class CopyObject {
       BufferedWriter bufferedWriter = new BufferedWriter(b);
 
       String ss;
-      while((ss=bufferedReader.readLine()) != null){
+      while ((ss = bufferedReader.readLine()) != null) {
         bufferedWriter.write(ss);
         System.out.println(ss);
       }
@@ -43,7 +43,7 @@ public class CopyObject {
       e.printStackTrace();
     } catch (IOException e) {
       e.printStackTrace();
-    }finally {
+    } finally {
 
     }
 
