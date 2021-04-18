@@ -1,3 +1,5 @@
+package algorithm.prctice.喷射战士;
+
 import java.util.*;
 
 /**

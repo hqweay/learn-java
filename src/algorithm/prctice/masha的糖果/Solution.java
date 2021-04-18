@@ -1,4 +1,4 @@
-package masha的糖果;
+//package masha的糖果;
 
 import java.util.Scanner;
 
@@ -20,7 +20,7 @@ public class Solution {
     }
     if (arr[0] + arr[2] == arr[1] + arr[3]) {
       System.out.println("YES");
-      new StringBuffer().ap
+//      new StringBuffer().a
       return;
     }
     if (arr[0] + arr[3] == arr[1] + arr[2]) {
