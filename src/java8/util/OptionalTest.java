@@ -11,7 +11,7 @@ public class OptionalTest {
   public static void main(String[] args) {
     Optional.ofNullable("test")
             .ifPresent(name -> {
-              System.out.println("ifPresent le" + name);
+              System.out.println("nice day!" + name);
             });
   }
 }

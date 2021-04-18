@@ -1,8 +1,5 @@
 package basic.ioTest;
 
-import org.junit.Test;
-
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
@@ -15,12 +12,12 @@ import java.nio.charset.Charset;
  */
 public class TestNIO {
 
-  @Test
+
   public void testNIO() throws IOException {
     FileChannel in = new RandomAccessFile("./src/testIO/test.txt", "rw").getChannel();
     ByteBuffer buffer = ByteBuffer.allocate(42);
 
-    while(in.read(buffer) != -1){
+    while (in.read(buffer) != -1) {
       buffer.flip();
       System.out.print(Charset.forName("utf-8").decode(buffer));
       buffer.clear();

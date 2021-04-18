@@ -20,6 +20,7 @@ public class ThreadCallable implements Callable<Integer> {
     FutureTask<Integer> task = new FutureTask<>(my);
     Thread thread = new Thread(task);
     thread.start();
+    // PreparedStatement
 
     try {
       System.out.println(task.get());

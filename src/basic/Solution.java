@@ -5,7 +5,9 @@ package basic;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.Scanner;
 
 /**
  * @description: TODO
@@ -14,23 +16,33 @@ import java.util.*;
 public class Solution {
 
   public static void main(String[] args) {
-    new Solution().inputTest();
+    new Solution().scannerTest();
   }
 
   public void scannerTest() {
+
+    System.out.println(13&6);
     Scanner scanner = new Scanner(System.in);
 
-    while(scanner.hasNext()){
-      int n = scanner.nextInt();
-      System.out.println(n);
-    }
+    // while (scanner.hasNext()) {
+    //   int n = scanner.nextInt();
+    //   int m = scanner.nextInt();
+    //   System.out.println("-======-");
+    //   System.out.println(n);
+    //   System.out.println(m);
+    // }
+    Queue ss = new PriorityQueue();
+    Throwable e = new Exception("s ");
+    System.out.println(e.getMessage());
+    super.toString();
 
   }
 
-  public void inputTest()  {
+  public void inputTest() {
     BufferedReader bufferedReader = new BufferedReader(
             new InputStreamReader(System.in));
     String c;
+
     try {
       do {
         c = (String) bufferedReader.readLine();

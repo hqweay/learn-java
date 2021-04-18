@@ -6,6 +6,8 @@ package basic.abstractTest;
  * Created on 8/16/20 6:18 PM
  */
 public abstract class People {
-  public abstract void say();
-  public abstract void run();
+  static int a = 1;
+  static int b = 2;
+
+  
 }
